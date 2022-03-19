@@ -1,8 +1,8 @@
 # SystemBanner
 
-#####
+-----
 ABOUT
-#####
+-----
 
 SystemBanner is an application used to display relevant security classification information about the Windows systems it runs on.
 
@@ -18,24 +18,24 @@ Unlike Microsoft NetBanner, which is unavailable to the public, full screen opac
 
 SystemBanner has been tested to work on Windows 10 with full functionality. Limited functionality may be available on other versions of Windows that support .NET Framework 4.7 or above (Such as Windows 11 or Windows Server 2016, 2019, and/or 2022).
 
-############
+------------
 INSTALLATION
-############
+------------
 
 To install SystemBanner, extract SystemBannerZip.zip to a folder of your choice and run InstallSystemBanner.bat as an administrator. 
 
 InstallSystemBanner.bat copies the SystemBanner Binary (SystemBanner.exe) from the SystemBannerZip folder to "C:\Program Files\SystemBanner", copies ADMX and ADML files (for Group Policy Functionality) to C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, creates a Scheduled Task for SystemBanner to run on logon of any user, and puts a Registry value into "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" to allow SystemBanner to be High DPI aware (ignore Windows Scaling). Lastly, it runs the scheduled task it made to start SystemBanner before exiting. 
 
-#######
+-------
 REMOVAL
-#######
+-------
 
 To remove SystemBanner, extract SystemBannerZip.zip to a folder of your choice and run RemoveSystemBanner.bat as an administrator.
 
 RemoveSystemBanner.bat kills all running instances of SystemBanner.exe, then deletes "C:\Program Files\SystemBanner\SystemBanner.exe", the "C:\Program Files\SystemBanner" folder, all SystemBanner ADMX and ADML files from C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, and removes the scheduled task.
 
-##############
+--------------
 ADMINISTRATION
-##############
+--------------
 
 SystemBanner comes out of the box with Group Policy templates to configure the security information displayed to the user. The ADMX/ADML files can be used to locally manage policy or can be loaded onto a domain's SYSVOL for domain-wide management. In either scenario, configuration items are located in Computer Configuration > Administrative Templates > SystemBanner. Once configuration changes are made, most are picked up by SystemBanner automatically while running. Custom color changes require an application restart at this time. 
