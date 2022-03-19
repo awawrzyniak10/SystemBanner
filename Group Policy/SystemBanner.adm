@@ -1,0 +1,65 @@
+CLASS USER
+CATEGORY "SystemBanner"
+    POLICY "Set Simple Classification Setting"
+        KEYNAME "Software\Policies\SystemBanner"
+        EXPLAIN "When this setting is enabled, the classification level selected will be shown. When set to UNCONFIGURED, not configured or disabled, the simple classification will be unconfigured and custom settings can be used."
+		PART "Simple Classification Setting" DROPDOWNLIST REQUIRED 
+			VALUENAME "Simple"
+				ITEMLIST
+					NAME "UNCONFIGURED" VALUE NUMERIC 0
+					NAME "UNCLASSIFIED" VALUE NUMERIC 1
+					NAME "CUI" VALUE NUMERIC 2
+					NAME "CONFIDENTIAL" VALUE NUMERIC 3
+					NAME "SECRET" VALUE NUMERIC 4
+					NAME "TOP SECRET" VALUE NUMERIC 5
+					NAME "TOP SECRET SCI" VALUE NUMERIC 6
+				END ITEMLIST
+		END PART
+    END POLICY
+    POLICY "Set Custom Background Color"
+        KEYNAME "Software\Policies\SystemBanner"
+        EXPLAIN "When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom color value is displayed in the Background."
+	PART "Red Background Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "0"
+        MAX    255
+        MIN    0
+        END PART
+	PART "Green Background Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "1"
+        MAX    255
+        MIN    0
+        END PART
+	PART "Blue Background Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "2"
+        MAX    255
+        MIN    0
+      END PART
+    END POLICY
+    POLICY "Set Custom Foreground Color"
+        KEYNAME "Software\Policies\SystemBanner"
+        EXPLAIN "When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom color value is displayed in the Foreground."
+	PART "Red Foreground Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "3"
+        MAX    255
+        MIN    0
+        END PART
+	PART "Green Foreground Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "4"
+        MAX    255
+        MIN    0
+        END PART
+	PART "Blue Foreground Color Value in Decimal (0-255)" NUMERIC REQUIRED
+        VALUENAME "5"
+        MAX    255
+        MIN    0
+      END PART
+    END POLICY
+    POLICY "Set Custom Text"
+        KEYNAME "Software\Policies\SystemBanner"
+        EXPLAIN "When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom text value is displayed in the Foreground."
+      	PART "Foreground Text"               EDITTEXT
+        VALUENAME "Text"
+      END PART
+    END POLICY
+END CATEGORY
+
