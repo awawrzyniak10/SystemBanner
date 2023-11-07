@@ -1,0 +1,50 @@
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+  <displayName>
+  </displayName>
+  <description>
+  </description>
+  <resources>
+    <stringTable>
+      <string id="unknown_0">SystemBanner</string>
+      <string id="unknown_1">Set Simple Classification Setting</string>
+      <string id="unknown_11">Set Custom Background Color</string>
+      <string id="unknown_16">Set Custom Foreground Color</string>
+      <string id="unknown_21">Set Custom Text</string>
+      <string id="unknown_4">UNCONFIGURED</string>
+      <string id="unknown_5">UNCLASSIFIED</string>
+      <string id="unknown_6">CUI</string>
+      <string id="unknown_7">CONFIDENTIAL</string>
+      <string id="unknown_8">SECRET</string>
+      <string id="unknown_9">TOP SECRET</string>
+      <string id="unknown_10">TOP SECRET SCI</string>
+      <string id="unknown_2">When this setting is enabled, the classification level selected will be shown. When set to UNCONFIGURED, not configured or disabled, the simple classification will be unconfigured and custom settings can be used.</string>
+      <string id="unknown_12">When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom color value is displayed in the Background.</string>
+      <string id="unknown_17">When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom color value is displayed in the Foreground.</string>
+      <string id="unknown_22">When Set Simple Classification Setting is set to UNCONFIGURED, not configured or disabled, and this setting is defined, this custom text value is displayed in the Foreground.</string>
+      <string id="SystemBanner_UnresolvedString">The ADMX encountered a string that is not defined.</string>
+      <string id="SystemBanner_SupportedOn">At least Windows Server 2012, or Windows 8.</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="SetSimpleClassificationSetting">
+        <dropdownList refId="SimpleClassificationSetting" defaultItem="0">Simple Classification Setting</dropdownList>
+      </presentation>
+      <presentation id="SetCustomBackgroundColor">
+        <decimalTextBox refId="RedBackgroundColorValueinDecimal0-255">Red Background Color Value in Decimal (0-255)</decimalTextBox>
+        <decimalTextBox refId="GreenBackgroundColorValueinDecimal0-255">Green Background Color Value in Decimal (0-255)</decimalTextBox>
+        <decimalTextBox refId="BlueBackgroundColorValueinDecimal0-255">Blue Background Color Value in Decimal (0-255)</decimalTextBox>
+      </presentation>
+      <presentation id="SetCustomForegroundColor">
+        <decimalTextBox refId="RedForegroundColorValueinDecimal0-255">Red Foreground Color Value in Decimal (0-255)</decimalTextBox>
+        <decimalTextBox refId="GreenForegroundColorValueinDecimal0-255">Green Foreground Color Value in Decimal (0-255)</decimalTextBox>
+        <decimalTextBox refId="BlueForegroundColorValueinDecimal0-255">Blue Foreground Color Value in Decimal (0-255)</decimalTextBox>
+      </presentation>
+      <presentation id="SetCustomText">
+        <textBox refId="ForegroundText">
+          <label>Foreground Text</label>
+          <defaultValue>
+          </defaultValue>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

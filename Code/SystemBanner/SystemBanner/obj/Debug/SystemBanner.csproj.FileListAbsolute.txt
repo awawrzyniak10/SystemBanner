@@ -1,0 +1,15 @@
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\bin\Debug\SystemBanner.exe.config
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\bin\Debug\SystemBanner.exe
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\bin\Debug\SystemBanner.pdb
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.csproj.SuggestedBindingRedirects.cache
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.Banner.resources
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.Properties.Resources.resources
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.csproj.GenerateResource.cache
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.csproj.CoreCompileInputs.cache
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.exe
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.pdb
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.csproj.AssemblyReference.cache
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\bin\Debug\SystemBanner.exe.manifest
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\bin\Debug\SystemBanner.application
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.exe.manifest
+C:\Users\awawrzyniak10\source\repos\SystemBanner\SystemBanner\obj\Debug\SystemBanner.application

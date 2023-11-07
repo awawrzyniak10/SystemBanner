@@ -1,0 +1,85 @@
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="SystemBanner" namespace="SystemBanner.Policies.72EB5485_A763_4CAB_BA52_2E0209424149" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <supportedOn>
+    <definitions>
+      <definition name="SUPPORTED_NotSpecified" displayName="$(string.SystemBanner_SupportedOn)" />
+    </definitions>
+  </supportedOn>
+  <categories>
+    <category name="SystemBanner" displayName="$(string.unknown_0)" />
+  </categories>
+  <policies>
+    <policy name="SetSimpleClassificationSetting" class="Machine" displayName="$(string.unknown_1)" explainText="$(string.unknown_2)" presentation="$(presentation.SetSimpleClassificationSetting)" key="Software\Policies\SystemBanner">
+      <parentCategory ref="SystemBanner" />
+      <supportedOn ref="SUPPORTED_NotSpecified" />
+      <elements>
+        <enum id="SimpleClassificationSetting" valueName="Simple" required="true">
+          <item displayName="$(string.unknown_4)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_5)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_6)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_7)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_8)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_9)">
+            <value>
+              <decimal value="5" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_10)">
+            <value>
+              <decimal value="6" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SetCustomBackgroundColor" class="Machine" displayName="$(string.unknown_11)" explainText="$(string.unknown_12)" presentation="$(presentation.SetCustomBackgroundColor)" key="Software\Policies\SystemBanner">
+      <parentCategory ref="SystemBanner" />
+      <supportedOn ref="SUPPORTED_NotSpecified" />
+      <elements>
+        <decimal id="RedBackgroundColorValueinDecimal0-255" valueName="0" required="true" maxValue="255" />
+        <decimal id="GreenBackgroundColorValueinDecimal0-255" valueName="1" required="true" maxValue="255" />
+        <decimal id="BlueBackgroundColorValueinDecimal0-255" valueName="2" required="true" maxValue="255" />
+      </elements>
+    </policy>
+    <policy name="SetCustomForegroundColor" class="Machine" displayName="$(string.unknown_16)" explainText="$(string.unknown_17)" presentation="$(presentation.SetCustomForegroundColor)" key="Software\Policies\SystemBanner">
+      <parentCategory ref="SystemBanner" />
+      <supportedOn ref="SUPPORTED_NotSpecified" />
+      <elements>
+        <decimal id="RedForegroundColorValueinDecimal0-255" valueName="3" required="true" maxValue="255" />
+        <decimal id="GreenForegroundColorValueinDecimal0-255" valueName="4" required="true" maxValue="255" />
+        <decimal id="BlueForegroundColorValueinDecimal0-255" valueName="5" required="true" maxValue="255" />
+      </elements>
+    </policy>
+    <policy name="SetCustomText" class="Machine" displayName="$(string.unknown_21)" explainText="$(string.unknown_22)" presentation="$(presentation.SetCustomText)" key="Software\Policies\SystemBanner">
+      <parentCategory ref="SystemBanner" />
+      <supportedOn ref="SUPPORTED_NotSpecified" />
+      <elements>
+        <text id="ForegroundText" valueName="Text" />
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
