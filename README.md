@@ -16,7 +16,7 @@ SystemBanner is a C# .NET Framework 4.7 Windows Forms Application that uses Sche
 
 Unlike Microsoft NetBanner, which is unavailable to the public, full screen opacity choices ensure that full screen applications (like videos) do not fully cover the banner. Additionally, some applications that do not adhere to standard window formatting (like FireFox) which do obscure Microsoft NetBanner do not interfere with the visibility of SystemBanner's markings. Lastly, out of the box support for custom colors and CUI markings allows this application to be used in the Defense Industrial Base, private sector, and other locations where security banners are useful or required. 
 
-SystemBanner has been tested to work on Windows 10 with full functionality. Limited functionality may be available on other versions of Windows that support .NET Framework 4.7 or above (Such as Windows 11 or Windows Server 2016, 2019, and/or 2022).
+SystemBanner has been tested to work on Windows 10 and Windows 11 with full functionality. Limited functionality may be available on other versions of Windows that support .NET Framework 4.7 or above (Such as Windows 11 or Windows Server 2016, 2019, and/or 2022).
 
 ------------
 INSTALLATION
