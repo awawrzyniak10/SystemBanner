@@ -85,12 +85,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppBar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AppBar.Designer.cs">
-      <DependentUpon>AppBar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Banner.cs">
       <SubType>Form</SubType>
     </Compile>

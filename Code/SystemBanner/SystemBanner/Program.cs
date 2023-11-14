@@ -1,4 +1,4 @@
-﻿//Copyright (c) 2022, Aaron Wawrzyniak. MIT License Applies.
+﻿//Copyright (c) 2023, Aaron Wawrzyniak. MIT License Applies.
 using System;
 using System.Windows.Forms;
 using Microsoft.Win32;
@@ -11,6 +11,11 @@ namespace SystemBanner
         /// The main entry point for the application.
         /// </summary>
         /// 
+        //debug var for console and event log entries
+        public static bool debug;
+        public static bool bannerTop = false;
+        public static bool bannerBottom = true;
+        public static bool bannerTopAndBottom;
         //storage for initial values to detect changes later
         public static int displayCount = System.Windows.Forms.Screen.AllScreens.Length;
         public static int displayPixelLength;
@@ -75,10 +80,13 @@ namespace SystemBanner
                     for (int i = 0; i < bannerColor.Length; i++)
                     {
                         var value = key.GetValue(i.ToString());
-                        if (value != null)
+                        if ((value != null)) //check reg value against bounds of colors
                         {
-                            value = key.GetValue(i.ToString());
-                            bannerColor[i] = (int)value;
+                            if (((int)value >= 0) & ((int)value <= 255))
+                            {
+                                value = key.GetValue(i.ToString());
+                                bannerColor[i] = (int)value;
+                            }
                         }
                         else
                         {
@@ -98,12 +106,31 @@ namespace SystemBanner
                     if (simpleValue != null)
                     {
                         simpleValue = key.GetValue("Simple");
-                        if ((int)simpleValue != 0)
+                        if (((int)simpleValue > 0) & ((int)simpleValue <= 6)) //check bounds of input fron registry against 
                         {
                             bannerColor = simpleBannerColors[(int)simpleValue];
                             bannerText = simpleBannerTexts[(int)simpleValue];
                         }
                     }
+                    //check if debug exists and is 1. If 1 then set debug to true.
+                    var debugValue = key.GetValue("Debug");
+                    if (debugValue != null)
+                    {
+                        if ((int)debugValue == 1)
+                        {
+                            debug = true;
+                        }
+                    }
+                    //check if TopAndBottom exists and is 1. If 1 then set bannerTopAndBottom to true.
+                    var bannerTopAndBottomValue = key.GetValue("TopAndBottom");
+                    if (bannerTopAndBottomValue != null)
+                    {
+                        if ((int)bannerTopAndBottomValue == 1)
+                        {
+                            bannerTopAndBottom = true;
+                        }
+                    }
+
                 }
                 //if no reg values, set to not configured.
                 else
@@ -113,21 +140,32 @@ namespace SystemBanner
                 }
             }
         }
-        private static void BuildBanners()
+        private static void BuildBanners() 
+            //This initially builds the SystemBanner(s) on all available windows.
         {
             for (int i = 0; i < System.Windows.Forms.Screen.AllScreens.Length; i++)
             {
-                Banner bannerInstance = new Banner(i, bannerColor, bannerText);
-                bannerInstance.Show();
-                AppBar AppBarInstance = new AppBar(i);
+                Banner bannerTopInstance = new Banner(i, bannerTop);
+                bannerTopInstance.Show();
+                if (bannerTopAndBottom)
+                {
+                    Banner bannerBottomInstance = new Banner(i, bannerBottom);
+                    bannerBottomInstance.Show();
+                }
+
             }
         }
-        private static void RebuildBanners()
+        private static void KillBanners()
         {
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
                 Application.OpenForms[i].Close();
             }
+        }
+        private static void RebuildBanners()
+            //This calls KillBanners() to close all open banners, then calls BuildBanners() again to build new banners based on new display info. 
+        {
+            KillBanners();
             BuildBanners();
         }
             
@@ -179,6 +217,17 @@ namespace SystemBanner
             {
                 RebuildBanners();
                 oldBannerText = bannerText;
+            }
+        }
+        public static void LogEventString(string msg)
+        {
+            using (System.Diagnostics.EventLog eventLog = new System.Diagnostics.EventLog("Application"))
+            {
+                eventLog.Source = "Application";
+                if (debug == true)
+                {
+                    eventLog.WriteEntry(msg, System.Diagnostics.EventLogEntryType.Information, 1902, 1);
+                }
             }
         }
     }

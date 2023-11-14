@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SystemBanner.exe" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SystemBanner.exe" size="17920">
       <assemblyIdentity name="SystemBanner" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>o4uC3SUw370x+YlbCxtil2/UgBhwOzq17fVfkf8+3Pk=</dsig:DigestValue>
+        <dsig:DigestValue>uaDlD0y88WvMkgQ6/fn4udF/B9bNTey98X9EpI9bv3w=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

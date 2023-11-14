@@ -1,6 +1,7 @@
 @ECHO ON & CLS & ECHO.
 NET FILE 1>NUL 2>NUL & IF ERRORLEVEL 1 (ECHO You must right-click and select "RUN AS ADMINISTRATOR"  to run this installer)
 PAUSE
+TASKKILL /F /IM SYSTEMBANNER.EXE
 MKDIR "C:\Program Files\SystemBanner"
 COPY  %~dp0\Bin\SystemBanner.exe "C:\Program Files\SystemBanner\"
 COPY "%~dp0\Group Policy\SystemBanner.admx" "C:\Windows\PolicyDefinitions\"

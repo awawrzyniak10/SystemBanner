@@ -7,4 +7,6 @@ RMDIR /S /Q "C:\Program Files\SystemBanner"
 DEL "C:\Windows\PolicyDefinitions\SystemBanner.admx"
 DEL "C:\Windows\PolicyDefinitions\en-US\SystemBanner.adml"
 SCHTASKS /DELETE /TN "SystemBanner" /F
+TASKKILL /F /IM explorer.exe
+EXPLORER.EXE
 PAUSE

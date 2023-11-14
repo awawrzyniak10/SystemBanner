@@ -81,5 +81,23 @@
         <text id="ForegroundText" valueName="Text" />
       </elements>
     </policy>
+    <policy name="SetBannerPositionSetting" class="Machine" displayName="$(string.unknown_13)" explainText="$(string.unknown_14)" presentation="$(presentation.SetBannerPositionSetting)" key="Software\Policies\SystemBanner">
+      <parentCategory ref="SystemBanner" />
+      <supportedOn ref="SUPPORTED_NotSpecified" />
+      <elements>
+        <enum id="BannerPositionSetting" valueName="TopAndBottom" required="true">
+          <item displayName="$(string.unknown_3)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.unknown_15)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
