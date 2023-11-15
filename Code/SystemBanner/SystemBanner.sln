@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemBanner", "SystemBanner\SystemBanner.csproj", "{6E91CAE3-1758-42F8-BD79-D6F06A47FB9B}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SystemBannerSetup", "SystemBannerSetup\SystemBannerSetup.vdproj", "{01782362-D568-4BE5-9CDF-C868C64749E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{6E91CAE3-1758-42F8-BD79-D6F06A47FB9B}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{6E91CAE3-1758-42F8-BD79-D6F06A47FB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E91CAE3-1758-42F8-BD79-D6F06A47FB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01782362-D568-4BE5-9CDF-C868C64749E0}.Debug|Any CPU.ActiveCfg = Debug
+		{01782362-D568-4BE5-9CDF-C868C64749E0}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

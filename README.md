@@ -22,17 +22,17 @@ SystemBanner has been tested to work on Windows 10 and Windows 11 with full func
 INSTALLATION
 ------------
 
-To install SystemBanner, extract SystemBannerZip.zip to a folder of your choice and run InstallSystemBanner.bat as an administrator. 
+To install SystemBanner, either install SystemBannerSetup.msi or download the project ZIP and run InstallSystemBanner.bat as an administrator. 
 
-InstallSystemBanner.bat copies the SystemBanner Binary (SystemBanner.exe) from the SystemBannerZip folder to "C:\Program Files\SystemBanner", copies ADMX and ADML files (for Group Policy Functionality) to C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, creates a Scheduled Task for SystemBanner to run on logon of any user, and puts a Registry value into "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" to allow SystemBanner to be High DPI aware (ignore Windows Scaling). Lastly, it runs the scheduled task it made to start SystemBanner before exiting. 
+Each installer copies the SystemBanner Binary (SystemBanner.exe) to "C:\Program Files\SystemBanner", copies ADMX and ADML files (for Group Policy Functionality) to C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, creates a Scheduled Task for SystemBanner to run on logon of any user, and puts a Registry value into "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" to allow SystemBanner to be High DPI aware (ignore Windows Scaling). Lastly, it runs the scheduled task it made to start SystemBanner before exiting. 
 
 -------
 REMOVAL
 -------
 
-To remove SystemBanner, extract SystemBannerZip.zip to a folder of your choice and run RemoveSystemBanner.bat as an administrator.
+To remove SystemBanner, either remove SystemBannerSetup.msi or run RemoveSystemBanner.bat as an administrator.
 
-RemoveSystemBanner.bat kills all running instances of SystemBanner.exe, then deletes "C:\Program Files\SystemBanner\SystemBanner.exe", the "C:\Program Files\SystemBanner" folder, all SystemBanner ADMX and ADML files from C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, and removes the scheduled task.
+Each removal method kills all running instances of SystemBanner.exe, then deletes "C:\Program Files\SystemBanner\SystemBanner.exe", the "C:\Program Files\SystemBanner" folder, all SystemBanner ADMX and ADML files from C:\Windows\PolicyDefinitions\ and C:\Windows\PolicyDefinitions\en-US\, and removes the scheduled task. Restarting Explorer.exe may clean up any remaining AppBar API calls that have not been cleaned up (the space the Banner makes for itself in the Windows UI).
 
 --------------
 ADMINISTRATION
