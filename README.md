@@ -8,7 +8,12 @@ SystemBanner is an application used to display relevant security classification 
 
 For example, SystemBanner comes out of the box with Group Policy templates that can configure SystemBanner to display the different levels of United States Classified National Security Information as defined by EO 13526, as ammended, and United States Controlled Unclassified Information as defined by EO 13556, as ammended.
 
+![Alt text](Docs/Images/SystemBanner_Working_Screenshot.png?raw=true)
+
 In addition, custom options implemented in Group Policy which sets relevant Registry values allow for other types of organizations to display custom messages and colors to warn users of Windows-based computers of the sensitivity of the information displayed, such as PII, PHI, Proprietary, or any kind of text-based marking or warning.
+
+![Alt text](Docs/Images/SystemBanner_GPO_Screenshot.png?raw=true)
+![Alt text](Docs/Images/SystemBanner_Custom_Screenshot.png?raw=true)
 
 SystemBanner displays the selected message to the user as soon as they are logged into Windows. As the user connects to new monitors or resizes existing ones, SystemBanner regenerates new AppBars to accomodate those changes. If fullscreen apps are detected, or the user mouses over the SystemBanner, the opacity of the SystemBanner will decrease to allow visibility to objects behind the SystemBanner without fully hiding the relevant security information displayed. 
 
