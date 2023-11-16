@@ -27,6 +27,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6E848D6662B64E87B005645B710C3C41"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_71A84056176E42C0966537E98A6FD7AA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,6 +40,12 @@
         "Entry"
         {
         "MsmKey" = "8:_9B52C43C22094B078F7B744D42668230"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B3FCFB1CA95A4E1F9118543E5F29EDE2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -51,19 +63,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_DC7379B04F7DBEBAAB74381108D36F2D"
-        "OwnerKey" = "8:_EF85A8E6267140FAAD6B86A3F2653DF7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_EC231263DAA144AEBB1DBCC2FCFAA808"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EF85A8E6267140FAAD6B86A3F2653DF7"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -76,13 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EF85A8E6267140FAAD6B86A3F2653DF7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DC7379B04F7DBEBAAB74381108D36F2D"
+        "OwnerKey" = "8:_B3FCFB1CA95A4E1F9118543E5F29EDE2"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -248,6 +242,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E848D6662B64E87B005645B710C3C41"
+            {
+            "SourcePath" = "8:..\\SystemBanner\\bin\\Release\\SystemBanner.exe.manifest"
+            "TargetName" = "8:SystemBanner.exe.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_AB12898FDC334EBB85250DDE9313A543"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_71A84056176E42C0966537E98A6FD7AA"
             {
             "SourcePath" = "8:..\\..\\..\\LICENSE"
@@ -326,37 +340,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DC7379B04F7DBEBAAB74381108D36F2D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_DC7379B04F7DBEBAAB74381108D36F2D"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_AB12898FDC334EBB85250DDE9313A543"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC231263DAA144AEBB1DBCC2FCFAA808"
@@ -488,15 +471,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SystemBanner"
-        "ProductCode" = "8:{24EA3E27-BBAF-4FCA-9ED0-F6F7228F45BE}"
-        "PackageCode" = "8:{45988BAE-813E-4AE1-A7A8-583C186FBDEF}"
+        "ProductCode" = "8:{5D123F7E-1389-46D8-B0A6-37DCEE3CAE89}"
+        "PackageCode" = "8:{8C852F5E-0E39-41DA-9F83-078E741917B9}"
         "UpgradeCode" = "8:{B174519D-9826-468A-BEEB-227F81E150D9}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0001"
+        "ProductVersion" = "8:1.0.0006"
         "Manufacturer" = "8:Aaron Wawrzyniak"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -580,11 +563,11 @@
                                                                 {
                                                                     "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_286F49E73C5D45F69DD480D36494AF61"
                                                                     {
-                                                                    "Name" = "8:%programfiles%\\SystemBanner\\SystemBanner.exe"
+                                                                    "Name" = "8:C:\\Program Files\\SystemBanner\\SystemBanner.exe"
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:~HIGHDPIAWARE"
+                                                                    "Value" = "8:~ HIGHDPIAWARE"
                                                                     }
                                                                 }
                                                             }
@@ -1072,7 +1055,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_EF85A8E6267140FAAD6B86A3F2653DF7"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_B3FCFB1CA95A4E1F9118543E5F29EDE2"
             {
             "SourcePath" = "8:..\\SystemBanner\\obj\\Release\\SystemBanner.exe"
             "TargetName" = "8:"
@@ -1092,7 +1075,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
+            "OutputConfiguration" = "8:Release|Any CPU"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{6E91CAE3-1758-42F8-BD79-D6F06A47FB9B}"
             "ShowKeyOutput" = "11:TRUE"

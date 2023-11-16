@@ -87,8 +87,8 @@ namespace SystemBanner
             this.classificationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; //draw the text centered within the banner/label
             this.classificationLabel.Size = new System.Drawing.Size(bannerWidth/2, bannerHeight); //make the label the same size as the banner itself
             this.classificationLabel.Text = Program.bannerText; //set the text to the value the function argument specifies
-            this.classificationLabel.Font = new System.Drawing.Font("Arial", bannerHeight-2, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
-            this.classificationLabel.Top = 0; //appear at the top of the banner
+            this.classificationLabel.Font = new System.Drawing.Font("Arial", bannerHeight-1, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
+            this.classificationLabel.Top = 1; //appear at the top of the banner
             this.classificationLabel.Left = (bannerWidth / 4); //appear at the left of the banner
             this.Controls.Add(this.classificationLabel); //draw the label
 
@@ -96,24 +96,24 @@ namespace SystemBanner
             {
                 this.leftLabel = new System.Windows.Forms.Label(); //create the label
                 this.leftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; //draw the text centered within the banner/label
-                this.leftLabel.Size = new System.Drawing.Size(120, bannerHeight); //make the label the same size as the banner itself
+                this.leftLabel.Size = new System.Drawing.Size(160, bannerHeight); //make the label the same size as the banner itself
                 this.leftLabel.Text = "SCREEN: " + bannerScreen; //set the text to the value the function argument specifies
-                this.leftLabel.Font = new System.Drawing.Font("Arial", bannerHeight - 2, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
-                this.leftLabel.Top = 0; //appear at the top of the banner
+                this.leftLabel.Font = new System.Drawing.Font("Arial", bannerHeight - 1, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
+                this.leftLabel.Top = 1; //appear at the top of the banner
                 this.leftLabel.Left = 0; //appear at the left of the banner
-                this.leftLabel.BackColor = System.Drawing.Color.Black;
+                //this.leftLabel.BackColor = System.Drawing.Color.Black;
                 this.Controls.Add(this.leftLabel); //draw the label
             }
             if (Program.debug == true)
             {
                 this.rightLabel = new System.Windows.Forms.Label(); //create the label
                 this.rightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter; //draw the text centered within the banner/label
-                this.rightLabel.Size = new System.Drawing.Size(120, bannerHeight); //make the label the same size as the banner itself
+                this.rightLabel.Size = new System.Drawing.Size(160, bannerHeight); //make the label the same size as the banner itself
                 this.rightLabel.Text = "DEBUG: " + Program.debug; //set the text to the value the function argument specifies
-                this.rightLabel.Font = new System.Drawing.Font("Arial", bannerHeight - 2, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
-                this.rightLabel.Top = 0; //appear at the top of the banner
+                this.rightLabel.Font = new System.Drawing.Font("Arial", bannerHeight - 1, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel); //set the label font to bold
+                this.rightLabel.Top = 1; //appear at the top of the banner
                 this.rightLabel.Left = bannerWidth - this.rightLabel.Width; //appear at the left of the banner
-                this.rightLabel.BackColor = System.Drawing.Color.Black;
+                //this.rightLabel.BackColor = System.Drawing.Color.Black;
                 this.Controls.Add(this.rightLabel); //draw the label
             }
 

@@ -172,13 +172,13 @@ namespace SystemBanner
         private static void RefreshBannerTimer()
         {
             Timer bannerTimer = new Timer();
-            bannerTimer.Interval = (10 * 100); // 1 sec
+            bannerTimer.Interval = (50 * 100); // 5 sec
             bannerTimer.Tick += new EventHandler(RefreshBannerTick);
             bannerTimer.Start();
         }
         private static void RefreshBannerTick(object sender, EventArgs e)
         {
-            GetRegValues();
+            //GetRegValues();
             if (displayCount != System.Windows.Forms.Screen.AllScreens.Length)
             {
                 RebuildBanners();
