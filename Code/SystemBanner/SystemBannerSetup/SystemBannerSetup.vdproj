@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_504721A90C5744829DBD5E6C3D846E53"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_653AE227C1744509B6CC0AFD012DE4A7"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6E848D6662B64E87B005645B710C3C41"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,12 +22,6 @@
         "Entry"
         {
         "MsmKey" = "8:_71A84056176E42C0966537E98A6FD7AA"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9B52C43C22094B078F7B744D42668230"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -58,12 +40,6 @@
         "Entry"
         {
         "MsmKey" = "8:_D9C97B3304B44E82AB5D0C3C009B52F6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_EC231263DAA144AEBB1DBCC2FCFAA808"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -151,34 +127,6 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_0325C1877ACD4701AD81438F36ED4B0A"
-            {
-            "Name" = "8:cmd.exe"
-            "Condition" = "8:"
-            "Object" = "8:_EC231263DAA144AEBB1DBCC2FCFAA808"
-            "FileType" = "3:2"
-            "InstallAction" = "3:4"
-            "Arguments" = "8:/c \"C:\\Program Files\\SystemBanner\\Tasks\\RemoveTask.bat\""
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_7E1CD035_890D_4B70_A779_27763F9DE1D6"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_AD6D38A3C3B64C05AD0160DDDFB8F38A"
-            {
-            "Name" = "8:cmd.exe"
-            "Condition" = "8:"
-            "Object" = "8:_EC231263DAA144AEBB1DBCC2FCFAA808"
-            "FileType" = "3:2"
-            "InstallAction" = "3:2"
-            "Arguments" = "8:/c \"C:\\Program Files\\SystemBanner\\Tasks\\InstallTask.bat\""
-            "EntryPoint" = "8:"
-            "Sequence" = "3:1"
-            "Identifier" = "8:_545A387B_4920_4D9F_AA21_5D26BF903E02"
-            "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
-            }
         }
         "DefaultFeature"
         {
@@ -202,46 +150,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_504721A90C5744829DBD5E6C3D846E53"
-            {
-            "SourcePath" = "8:..\\..\\..\\Tasks\\SystemBanner.XML"
-            "TargetName" = "8:SystemBanner.XML"
-            "Tag" = "8:"
-            "Folder" = "8:_756AD85471E140C1B0764FB47E567E89"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_653AE227C1744509B6CC0AFD012DE4A7"
-            {
-            "SourcePath" = "8:..\\..\\..\\Tasks\\RemoveTask.bat"
-            "TargetName" = "8:RemoveTask.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_756AD85471E140C1B0764FB47E567E89"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E848D6662B64E87B005645B710C3C41"
             {
             "SourcePath" = "8:..\\SystemBanner\\bin\\Release\\SystemBanner.exe.manifest"
@@ -268,26 +176,6 @@
             "TargetName" = "8:LICENSE"
             "Tag" = "8:"
             "Folder" = "8:_AB12898FDC334EBB85250DDE9313A543"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9B52C43C22094B078F7B744D42668230"
-            {
-            "SourcePath" = "8:..\\..\\..\\Tasks\\InstallTask.bat"
-            "TargetName" = "8:InstallTask.bat"
-            "Tag" = "8:"
-            "Folder" = "8:_756AD85471E140C1B0764FB47E567E89"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -339,26 +227,6 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EC231263DAA144AEBB1DBCC2FCFAA808"
-            {
-            "SourcePath" = "8:C:\\Windows\\System32\\cmd.exe"
-            "TargetName" = "8:cmd.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_D46FDD7F368E4A2BBA899C13BD73E56F"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
@@ -442,17 +310,6 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_756AD85471E140C1B0764FB47E567E89"
-                    {
-                    "Name" = "8:Tasks"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_3DE4A839F4484C30A2986289678CAC7E"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
         }
@@ -471,15 +328,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SystemBanner"
-        "ProductCode" = "8:{5D123F7E-1389-46D8-B0A6-37DCEE3CAE89}"
-        "PackageCode" = "8:{8C852F5E-0E39-41DA-9F83-078E741917B9}"
+        "ProductCode" = "8:{931006E9-2DEC-4EE0-80CC-05BA379E066D}"
+        "PackageCode" = "8:{C043AE9F-F7C4-469C-97AF-FD71DB815099}"
         "UpgradeCode" = "8:{B174519D-9826-468A-BEEB-227F81E150D9}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0006"
+        "ProductVersion" = "8:1.0.0007"
         "Manufacturer" = "8:Aaron Wawrzyniak"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -488,7 +345,7 @@
         "ARPCONTACT" = "8:Aaron Wawrzyniak"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:SystemBanner is an application used to display relevant security classification information about the Windows systems it runs on. "
-        "ARPURLINFOABOUT" = "8:"
+        "ARPURLINFOABOUT" = "8:https://github.com/awawrzyniak10/SystemBanner"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -574,6 +431,56 @@
                                                         }
                                                         "Values"
                                                         {
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_6EB19938D7F34D91BEA19EB1E022AE72"
+                                    {
+                                    "Name" = "8:Windows"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FD252F414EF44140A7FF1887DB06472F"
+                                            {
+                                            "Name" = "8:CurrentVersion"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FE659BA4575D46F2A854B74A0D8E62F0"
+                                                    {
+                                                    "Name" = "8:Run"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                        }
+                                                        "Values"
+                                                        {
+                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_D35286C75674456FBC3A696D35577FD0"
+                                                            {
+                                                            "Name" = "8:SystemBanner"
+                                                            "Condition" = "8:"
+                                                            "Transitive" = "11:FALSE"
+                                                            "ValueTypes" = "3:1"
+                                                            "Value" = "8:C:\\Program Files\\SystemBanner\\SystemBanner.exe"
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -701,7 +608,7 @@
                             "ContextData" = "8:1;True=1;False=0"
                             "Attributes" = "3:0"
                             "Setting" = "3:0"
-                            "Value" = "3:1"
+                            "Value" = "3:0"
                             "DefaultValue" = "3:1"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -709,7 +616,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9143D83E5FF34D1C8F60D756BA5D2AD0"
                     {
-                    "Sequence" = "3:300"
+                    "Sequence" = "3:600"
                     "DisplayName" = "8:Confirm Installation"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -757,8 +664,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:This application was developed by Aaron Wawrzyniak (awawrzyniak10) under the MIT License."
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -770,8 +677,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1203"
+                            "Setting" = "3:2"
+                            "Value" = "8:The installer will guide you through the steps required to install [ProductName] on your computer. After installation, please log off and log on to start SystemBanner.exe. Alternatively, run C:\\Program Files\\SystemBanner\\SystemBanner.exe. To configure the settings of SystemBanner, use Group Policy."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -858,8 +765,8 @@
                             "Type" = "3:15"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1258"
+                            "Setting" = "3:2"
+                            "Value" = "8:"
                             "DefaultValue" = "8:#1258"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -999,8 +906,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:This application was developed by Aaron Wawrzyniak (awawrzyniak10) under the MIT License."
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1012,8 +919,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1203"
+                            "Setting" = "3:2"
+                            "Value" = "8:The installer will guide you through the steps required to install [ProductName] on your computer. After installation, please log off and log on to start SystemBanner.exe. Alternatively, run C:\\Program Files\\SystemBanner\\SystemBanner.exe. To configure the settings of SystemBanner, use Group Policy."
                             "DefaultValue" = "8:#1203"
                             "UsePlugInResources" = "11:TRUE"
                             }

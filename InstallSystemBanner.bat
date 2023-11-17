@@ -6,7 +6,7 @@ MKDIR "C:\Program Files\SystemBanner"
 COPY  %~dp0\Code\SystemBanner\SystemBanner\bin\Release\SystemBanner* "C:\Program Files\SystemBanner\"
 COPY "%~dp0\Group Policy\SystemBanner.admx" "C:\Windows\PolicyDefinitions\"
 COPY "%~dp0\Group Policy\en-US\SystemBanner.adml" "C:\Windows\PolicyDefinitions\en-US\"
-SCHTASKS /CREATE /XML %~dp0\Tasks\SystemBanner.XML /TN "SystemBanner" 
-REG ADD "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /V "%programfiles%\SystemBanner\SystemBanner.exe" /T REG_SZ /D ~HIGHDPIAWARE /F
-SCHTASKS /RUN /TN "SystemBanner" 
+REG ADD "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /V "C:\Program Files\SystemBanner\SystemBanner.exe" /T REG_SZ /D "~ HIGHDPIAWARE" /F
+RED ADD "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SystemBanner" /T REG_SZ /D "C:\Program Files\SystemBanner\SystemBanner.exe" /F
+"C:\Program Files\SystemBanner\SystemBanner.exe"
 PAUSE
