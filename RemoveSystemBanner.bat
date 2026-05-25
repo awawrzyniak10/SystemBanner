@@ -9,5 +9,5 @@ RMDIR /S /Q "C:\Program Files\SystemBanner"
 DEL "C:\Windows\PolicyDefinitions\SystemBanner.admx"
 DEL "C:\Windows\PolicyDefinitions\en-US\SystemBanner.adml"
 REG DELETE "HKLM\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /V "C:\Program Files\SystemBanner\SystemBanner.exe" /F
-RED DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SystemBanner"/F
+REG DELETE "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SystemBanner"/F
 PAUSE
