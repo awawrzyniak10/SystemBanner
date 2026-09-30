@@ -93,6 +93,9 @@ StyleCopReport.xml
 # Chutzpah Test files
 _Chutzpah*
 
+# ha1f3mpty's test files
+**/ha1f3mpty-testFiles/
+
 # Visual C++ cache files
 ipch/
 *.aps
