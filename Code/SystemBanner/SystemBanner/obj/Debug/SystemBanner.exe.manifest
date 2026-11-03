@@ -4,7 +4,7 @@
   <description asmv2:iconFile="SystemBannerIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="SystemBanner" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="SystemBanner" version="1.1.1000.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="SystemBanner.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SystemBanner.exe" size="487424">
-      <assemblyIdentity name="SystemBanner" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SystemBanner.exe" size="487936">
+      <assemblyIdentity name="SystemBanner" version="1.1.1000.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ooF60hKYmpCl62pJPFMqDbuY9nlSsfeFnc6tyfOJnUU=</dsig:DigestValue>
+        <dsig:DigestValue>rWRSQLU655Pp/Vtqo113xzlABk+MWSObfVf2mkgnXfg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

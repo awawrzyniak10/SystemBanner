@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SystemBanner.exe.manifest" size="5330">
+    <dependentAssembly dependencyType="install" codebase="SystemBanner.exe.manifest" size="5336">
       <assemblyIdentity name="SystemBanner.exe" version="1.1.1.37" publicKeyToken="0000000000000000" language="en" processorArchitecture="amd64" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4oB6i1gwxxb9hEPwzvmGCL4TdfFF3ld7/EBnMgR544o=</dsig:DigestValue>
+        <dsig:DigestValue>2gN1bcJ4xP0uDSYI0M2Fywqsrs6yCIWOHOJ8+BgAurw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
