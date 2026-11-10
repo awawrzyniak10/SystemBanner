@@ -195,6 +195,6 @@ if ($null -eq $Text -or $Text.Text -ne $BannerText) {
 # COMPLETE
 # ==============================================================================
 
-Write-Host "SystemBanner TS//SAR//WAIVED remediation succeeded: Configuration is correct and SystemBanner has been started."
+Write-Host "SystemBanner TS//SAR//WAIVED remediation succeeded: Configuration is correct."
 
 exit 0
