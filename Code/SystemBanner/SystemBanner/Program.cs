@@ -1,4 +1,4 @@
-﻿//Copyright (c) 2023, Aaron Wawrzyniak. MIT License Applies.
+﻿//Copyright (c) 2026, Aaron Wawrzyniak. MIT License Applies.
 using System;
 using System.Windows.Forms;
 using Microsoft.Win32;
@@ -7,10 +7,6 @@ namespace SystemBanner
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        /// 
         //debug var for console and event log entries
         public static bool debug;
         public static bool bannerTop = false;
@@ -62,8 +58,9 @@ namespace SystemBanner
             oldBannerText = bannerText;
             //for each screen that exists, build me a new banner on that screen with color and text values defined.
             BuildBanners();
-            //set a timer for refreshing banners if needed
-            RefreshBannerTimer();
+            //set timers for refreshing banners if needed
+            RefreshBannerPosTimer();
+            RefreshBannerCosTimer();
             //on your marks, get set...
             Application.Run();
         }
@@ -113,14 +110,14 @@ namespace SystemBanner
                         }
                     }
                     //check if debug exists and is 1. If 1 then set debug to true.
-                    var debugValue = key.GetValue("Debug");
-                    if (debugValue != null)
-                    {
-                        if ((int)debugValue == 1)
-                        {
-                            debug = true;
-                        }
-                    }
+                    //var debugValue = key.GetValue("Debug");
+                    //if (debugValue != null)
+                    //{
+                    //    if ((int)debugValue == 1)
+                    //    {
+                    //        debug = true;
+                    //    }
+                    //}
                     //check if TopAndBottom exists and is 1. If 1 then set bannerTopAndBottom to true.
                     var bannerTopAndBottomValue = key.GetValue("TopAndBottom");
                     if (bannerTopAndBottomValue != null)
@@ -169,16 +166,17 @@ namespace SystemBanner
             BuildBanners();
         }
             
-        private static void RefreshBannerTimer()
+        private static void RefreshBannerPosTimer()
+        //This function creates and starts the timer for Banner POSition changes.
         {
-            Timer bannerTimer = new Timer();
-            bannerTimer.Interval = (50 * 100); // 5 sec
-            bannerTimer.Tick += new EventHandler(RefreshBannerTick);
-            bannerTimer.Start();
+            Timer bannerPosTimer = new Timer();
+            bannerPosTimer.Interval = (5000); // 5 sec
+            bannerPosTimer.Tick += new EventHandler(RefreshBannerPosTick);
+            bannerPosTimer.Start();
         }
-        private static void RefreshBannerTick(object sender, EventArgs e)
+        private static void RefreshBannerPosTick(object sender, EventArgs e)
+        //This function checks if the Banner POSition needs to change, and if so, re-builds banners.
         {
-            //GetRegValues();
             if (displayCount != System.Windows.Forms.Screen.AllScreens.Length)
             {
                 RebuildBanners();
@@ -208,6 +206,19 @@ namespace SystemBanner
                 RebuildBanners();
                 displayPixelHash = currentDisplayPixelHash;
             }
+        }
+        private static void RefreshBannerCosTimer()
+        {
+        //This function creates and starts the timer for Banner COSmetic changes.
+            Timer bannerCosTimer = new Timer();
+            bannerCosTimer.Interval = (60000); // 60 sec
+            bannerCosTimer.Tick += new EventHandler(RefreshBannerCosTick);
+            bannerCosTimer.Start();
+        }
+        private static void RefreshBannerCosTick(object sender, EventArgs e)
+        //This function checks if the Banner COSmetics needs to change, and if so, re-builds banners.
+        {
+            GetRegValues();
             if (oldBannerColor != bannerColor)
             {
                 RebuildBanners();

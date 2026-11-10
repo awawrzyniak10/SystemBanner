@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SystemBanner")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("SystemBanner is an application used to display information security attributes or classification markings applicable for the Windows systems it runs on.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("awawrzyniak10")]
 [assembly: AssemblyProduct("SystemBanner")]
-[assembly: AssemblyCopyright("Copyright ©  2026 Aaron Wawrzyniak")]
+[assembly: AssemblyCopyright("Copyright © 2026 Aaron Wawrzyniak")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.1.0.0")]
-[assembly: AssemblyFileVersion("1.1.0.0")]
+[assembly: AssemblyVersion("1.1.1000.0")]
+[assembly: AssemblyFileVersion("1.1.1000.0")]
