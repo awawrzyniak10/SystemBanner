@@ -1,16 +1,11 @@
-<#
-================================================================================
-SystemBanner - Custom TS//SAR//WAIVED Remediation
-================================================================================
+# ============================================================
+# SystemBanner - Custom TS//SAR//WAIVED Remediation
+#
+# Exit codes:
+#   0 = Configuration successfully applied
+#   1 = Configuration failed
+# ============================================================
 
-Direct registry configuration for the SystemBanner Group Policy settings.
-
-Exit codes:
-
-    0 = Configuration successfully applied
-    1 = Configuration failed
-
-#>
 
 
 # ==============================================================================
@@ -195,27 +190,6 @@ if ($null -eq $Text -or $Text.Text -ne $BannerText) {
     Write-Host "SystemBanner TS//SAR//WAIVED validation failed: Custom Banner Text does not match the configured value."
     exit 1
 }
-
-
-# ==============================================================================
-# START SYSTEMBANNER
-# ==============================================================================
-
-if (-not (Test-Path -LiteralPath $exePath -PathType Leaf)) {
-    Write-Host "SystemBanner TS//SAR//WAIVED remediation failed: SystemBanner executable was not found: $exePath"
-    exit 1
-}
-
-try {
-    Stop-Process -Name "SystemBanner" -Force -ErrorAction SilentlyContinue
-
-    Start-Process -FilePath $exePath -ErrorAction Stop
-}
-catch {
-    Write-Host "SystemBanner TS//SAR//WAIVED remediation failed: Configuration is correct, but SystemBanner could not be started. $($_.Exception.Message)"
-    exit 1
-}
-
 
 # ==============================================================================
 # COMPLETE

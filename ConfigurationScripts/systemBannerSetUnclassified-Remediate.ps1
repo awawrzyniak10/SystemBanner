@@ -92,14 +92,6 @@ $programFiles = if ($env:ProgramW6432) { $env:ProgramW6432 } else { $env:Program
 $installPath = Join-Path $programFiles "SystemBanner"
 $exePath     = Join-Path $installPath "SystemBanner.exe"
 
-try {
-    Start-Process -FilePath $exePath -ErrorAction Stop
-}
-catch {
-    Write-Host "SystemBanner configuration is correct, but the application failed to start: $($_.Exception.Message)"
-    exit 1
-}
-
 
 # ============================================================
 # COMPLETE

@@ -1,4 +1,10 @@
+# ============================================================
 # SystemBanner - Top Secret SCI Remediation
+#
+# Exit codes:
+#   0 = Configuration successfully applied
+#   1 = Configuration failed
+# ============================================================
 
 $PolicyPath = "HKLM:\Software\Policies\SystemBanner"
 $programFiles = if ($env:ProgramW6432) { $env:ProgramW6432 } else { $env:ProgramFiles }
@@ -31,14 +37,6 @@ if ($null -eq $Simple -or $Simple.Simple -ne $SimpleClassificationSetting) {
 
 if ($null -eq $Position -or $Position.TopAndBottom -ne $BannerPositionSetting) {
     Write-Host "Validation failed: Banner Position is not set to TOP ONLY."
-    exit 1
-}
-
-try {
-    Start-Process -FilePath $exePath -ErrorAction Stop
-}
-catch {
-    Write-Host "SystemBanner configuration is correct, but the application failed to start: $($_.Exception.Message)"
     exit 1
 }
 
