@@ -97,5 +97,5 @@ $exePath     = Join-Path $installPath "SystemBanner.exe"
 # COMPLETE
 # ============================================================
 
-Write-Host "SystemBanner is correctly configured for UNCLASSIFIED, TOP ONLY and has been started."
+Write-Host "SystemBanner is correctly configured for UNCLASSIFIED, TOP ONLY."
 exit 0

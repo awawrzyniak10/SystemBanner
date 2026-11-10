@@ -40,5 +40,5 @@ if ($null -eq $Position -or $Position.TopAndBottom -ne 0) {
     exit 1
 }
 
-Write-Host "SystemBanner is correctly configured for CUI, TOP ONLY and has been started."
+Write-Host "SystemBanner is correctly configured for CUI, TOP ONLY."
 exit 0

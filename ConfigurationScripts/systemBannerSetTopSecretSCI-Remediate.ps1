@@ -40,5 +40,5 @@ if ($null -eq $Position -or $Position.TopAndBottom -ne $BannerPositionSetting) {
     exit 1
 }
 
-Write-Host "SystemBanner is correctly configured for TOP SECRET SCI, TOP ONLY and has been started."
+Write-Host "SystemBanner is correctly configured for TOP SECRET SCI, TOP ONLY."
 exit 0
