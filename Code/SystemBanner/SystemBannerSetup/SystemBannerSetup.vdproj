@@ -328,15 +328,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:SystemBanner"
-        "ProductCode" = "8:{18685EB4-9969-4437-85A9-746E15B658DE}"
-        "PackageCode" = "8:{0FE64781-30C8-4F87-82F4-7DFD08804628}"
+        "ProductCode" = "8:{9E53E338-9C18-4063-8230-BAD5B36F78A5}"
+        "PackageCode" = "8:{3E3A8818-81AE-4BAB-B0F5-8157C53B34F0}"
         "UpgradeCode" = "8:{B174519D-9826-468A-BEEB-227F81E150D9}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.1000"
+        "ProductVersion" = "8:1.1.2000"
         "Manufacturer" = "8:Aaron Wawrzyniak (awawrzyniak10)"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -479,7 +479,7 @@
                                                             "Condition" = "8:"
                                                             "Transitive" = "11:FALSE"
                                                             "ValueTypes" = "3:1"
-                                                            "Value" = "8:[TARGETDIR]\\SystemBanner.exe"
+                                                            "Value" = "8:\"[TARGETDIR]SystemBanner.exe\""
                                                             }
                                                         }
                                                     }
